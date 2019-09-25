@@ -1,0 +1,39 @@
+{{include '../../template/header.art'}}
+<div class="hp-quick-login-container {{colorCss}}">
+{{include '../../template/toast.art'}}
+    <ul class="hp-tab-head hp-cf">
+      <li class="hp-tab-selected hp-login-normal">
+        <span>帐号密码登录</span>
+      </li>
+      <li class="hp-login-quick">
+        <span>手机短信登录</span>
+      </li>
+    </ul>
+    <div class="hp-account-login">
+        <div id="hp-login-normal" data-hp-widgets="8" style="display: block;">
+        <form name='account-login'>
+              <div class="hp-input-item">
+                  <input type="text" class="hp-input hp-username" name="hp-username" autocomplete="on" autocapitalize="off" autocorrect="off" placeholder="手机号/用户名/邮箱">
+                  <span class="hp-icon hp-icon-del hp-btn-del-name" style=""></span>
+                  <i class="hp-input-icon hp-icon-input-username"></i>
+                  <span class="hp-err-tips hp-usernametips"></span>
+                  <span class="hp-flag"></span>
+              </div>
+              <div class="hp-input-item">
+                <input type="password" class="hp-input hp-password" name="password" autocomplete="current-password" maxlength="20" placeholder="密码">
+                <i class="hp-input-icon hp-icon-input-password"></i>
+                <span class="hp-err-tips hp-pwdtips"></span>
+              </div>
+
+              <div class="hp-input-item hp-input-half hp-input-captcha hp-hide">
+                  <input class="hp-input" type="text" maxlength="8" name="hp-img" placeholder="请输入图片验证码">
+                  <span class="hp-btn-half hp-captcha-pic"><img  class="hp-captcha-img"></img></span>
+                  <i class="hp-input-icon hp-icon-input-captcha"></i>
+                  <span class="hp-err-tips hp-imgtips"></span>
+              </div>
+
+              <button class="hp-btn hp-btn-green hp-disabled" type="submit" name="login-btn">登录</button>
+          </form>
+        </div>
+    </div>
+</div>

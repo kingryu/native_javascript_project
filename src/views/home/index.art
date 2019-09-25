@@ -1,0 +1,38 @@
+{{include '../../template/header.art'}}
+<div class="hp-quick-login-container {{colorCss}}">
+{{include '../../template/toast.art'}}
+    <ul class="hp-tab-head hp-cf">
+      <li class="hp-login-normal">
+        <span>帐号密码登录</span>
+      </li>
+      <li class="hp-tab-selected hp-login-quick">
+        <span>手机短信登录</span>
+      </li>
+    </ul>
+    <div class='hp-quick-login'>
+      <div class="hp-input-item country-select inside">
+          {{include '../../template/phoneCode.art'}}
+          <input class="hp-input mobile-input" name="hp-mobile" type="tel" maxlength="11" placeholder="请填写手机号">
+          <i class="hp-input-icon hp-icon-input-mobile"></i>
+          <span class="hp-err-tips hp-mobiletips"></span>
+          <span class="hp-flag"></span>
+      </div>
+
+      <div class="hp-input-item hp-input-half hp-input-captcha hp-hide">
+          <input class="hp-input" type="text" maxlength="8" name="hp-img" placeholder="请输入图片验证码">
+          <span class="hp-btn-half hp-captcha-pic"><img  class="hp-captcha-img"></img></span>
+          <i class="hp-input-icon hp-icon-input-captcha"></i>
+          <span class="hp-err-tips hp-imgtips"></span>
+      </div>
+
+      <div class="hp-input-item hp-input-half hp-input-dtm">
+          <input class="hp-input" type="text" maxlength="6" name="hp-sms" placeholder="请输入短信动态码">
+          <i class="hp-input-icon hp-icon-input-sms"></i>
+          <button class="hp-btn-half hp-dtm-get hp-disabled" name="sms-btn">获取动态码</button>
+          <span class="hp-err-tips hp-smstips"></span>
+      </div>
+      <div class="hp-input-item">
+          <button class="hp-btn hp-disabled" name="login-btn" type="submit">登录</button>
+      </div>
+    </div>
+</div>

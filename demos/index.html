@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>js project sample</title>
+    <link href="./nativejssamples.css" rel="stylesheet">
+    <script type="text/javascript" src="./nativejssamples.js"></script>
+</head>
+<body>
+<div id="passLogin" class="container"></div>
+<script>
+    var deviceManagement
+
+   function loginSuccess(d){
+     console.log('login success',d)
+     alert('恭喜！登录成功  信息:'+JSON.stringify(d));
+   }
+
+   function show(env){
+     var container = document.getElementById('passLogin')
+     deviceManagement = new window.NativeJsProject({env:env,passHost:'.test.com',isHttp:true,userDomain:'hj',callback:loginSuccess,container:container})
+     deviceManagement.show();
+   }
+
+   show('qa')
+</script>
+</body>
+</html>

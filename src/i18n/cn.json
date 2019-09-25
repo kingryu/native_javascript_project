@@ -1,0 +1,13 @@
+{
+  "login_title"           : "欢迎登录",
+  "device_management"     : "设备管理",
+  "device_full"           : "设备数量超限",
+  "device_tips"           : "为了保障您的帐号安全，同时登录设备数量有限制，超过数量后将需要短信验证",
+  "replace_tips"          : "您同时登录的设备太多，需要退出登录其中一台设备，才能继续当前登录",
+  "this_device"           : "本机",
+  "delete"                : "退出",
+  "delete_tips"           : "确定要退出登录当前这个设备？",
+  "cancel"                : "取消",
+  "confirm"               : "退出登录",
+  "last_login"            : "最近一次访问"
+}

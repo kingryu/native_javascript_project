@@ -1,0 +1,164 @@
+.country-select {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.country-select * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.country-select .hide {
+  display: none;
+}
+
+.country-select .v-hide {
+  visibility: hidden;
+}
+
+.country-select input, .country-select input[type=text] {
+  position: relative;
+  z-index: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-right: 81px;
+  margin-right: 0;
+}
+
+.country-select .flag-dropdown {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1px;
+  width:100%;
+}
+
+.country-select .selected-flag {
+  z-index: 1;
+  position: relative;
+  width: 81px;
+  height: 100%;
+  padding: 0 0 0 8px;
+}
+
+.country-select .selected-flag .flag {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 26px;
+  text-align: center;
+}
+
+.country-select .selected-flag .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 6px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+}
+
+.country-select .selected-flag .arrow.up {
+  border-top: none;
+  border-bottom: 4px solid #555;
+}
+
+.country-select .country-list {
+  position: absolute;
+  z-index: 2;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 0 -1px;
+  width:100%;
+  max-height: 200px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  overflow-y: scroll;
+}
+
+.country-select .country-list .flag {
+  width: 65px;
+  text-align: center;
+  line-height: 25px;
+  float: right;
+}
+
+.country-select .country-list .divider {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.country-select .country-list .country {
+  padding: 5px 10px;
+}
+
+.country-select .country-list .country.highlight {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.country-select .country-list .flag, .country-select .country-list .country-name {
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.country-list {
+  li:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.country-select .country-list .country-name {
+  display: inline-block;
+  width: 65px;
+}
+
+.country-select .country-list .flag {
+  margin-right: 6px;
+}
+
+.country-select.inside input, .country-select.inside input[type=text] {
+  padding-right: 8px;
+  padding-left: 99px;
+  margin-left: 0;
+}
+
+.country-select.inside .flag-dropdown {
+  right: auto;
+  left: 0;
+}
+
+.country-select.inside .selected-flag {
+  width: 91px;
+}
+
+.country-select.inside .flag-dropdown:hover {
+  cursor: pointer;
+}
+
+.country-select.inside input[disabled] + .flag-dropdown:hover, .country-select.inside input[readonly] + .flag-dropdown:hover {
+  cursor: default;
+}
+
+.country-select.inside input[disabled] + .flag-dropdown:hover .selected-flag, .country-select.inside input[readonly] + .flag-dropdown:hover .selected-flag {
+  background-color: transparent;
+}
+
+.country-select .flag {
+  width: 65px;
+  height: 25px;
+}
+
+.country-select .flag {
+  width: 65px;
+}

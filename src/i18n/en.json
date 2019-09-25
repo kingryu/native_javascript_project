@@ -1,0 +1,13 @@
+{
+  "login_title"           : "welcome",
+  "device_management"     : "device management",
+  "device_full"           : "Equipment quantity exceeds limit ",
+  "device_tips"           : "only {num} devices can login this app",
+  "replace_tips"          : "There are so many devices that you are logging that you need to log out of one of them to continue logging in",
+  "this_device"           : "this one",
+  "delete"                : "logout",
+  "delete_tips"           : "logout this device?",
+  "cancel"                : "cancel",
+  "confirm"               : "logout now",
+  "last_login"            : "last login"
+}

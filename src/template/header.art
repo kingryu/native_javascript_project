@@ -1,0 +1,3 @@
+{{if !hideHeader}}
+<div class="hp-nav"><p class="hp-title">{{title}}</p></div>
+{{/if}}

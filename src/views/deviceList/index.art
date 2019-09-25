@@ -1,0 +1,22 @@
+{{include '../../template/header.art'}}
+<div class="hp-devices-list {{colorCss}}">
+{{include '../../template/toast.art'}}
+    <div class=" hp-devices-tips">
+      <p>{{devicesTips}}</p>
+    </div>
+    <ul class="hp-lists">
+      {{each devicesList}}
+      <li>
+        {{if $index==0}}
+          <span class="hp-this-device">{{thisDevice}}</span>
+        {{else}}
+          <button type="button" data-index="{{$index}}">{{delLabel}}</button>
+        {{/if}}
+        <span class="hp-icon hp-icon-{{$value.icon}}"></span>
+        <p class="hp-item-name">{{$value.deviceName}}</p>
+        <p><span class="hp-item-time">{{$value.lastLoginTime}}</span>  <span class="hp-item-location">{{$value.lastLoginLocation}}</span></p>
+      </li>
+      {{/each}}
+    </ul>
+    {{include '../../template/dialog.art'}}
+</div>

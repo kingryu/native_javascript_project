@@ -1,0 +1,19 @@
+<div class="flag-dropdown">
+  <div class="selected-flag" title={{currentName}}>
+    <div class="flag">{{currentCode}}</div>
+    <div class="arrow"></div>
+  </div>
+  <ul class="country-list hide">
+    <li class="country preferred" data-country-code="CN">
+      <span class="country-name">{{currentName}}</span>
+      <span class="flag">{{currentCode}}</span>
+    </li>
+    <li class="divider"></li>
+      {{each countryList}}
+      <li class="country" data-country-code="{{$value.area}}">
+        <span class="country-name">{{$value.cName}}</span>
+        <span class="flag">{{$value.code}}</span>
+      </li>
+      {{/each}}
+  </ul>
+</div>

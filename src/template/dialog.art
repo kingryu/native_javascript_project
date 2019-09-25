@@ -1,0 +1,10 @@
+<div class="hp-dialog-box" style="display: none">
+  <div class="hp-modal-mask " style="z-index: 1000000;"></div>
+  <div class="hp-modal-content hp-confirm" style="z-index: 1000001;">
+    <div class="hp-confirm-content ">{{dialog_content}}</div>
+    <div class="hp-confirm-footer">
+      <div class="hp-confirm-ft-item" data-btn="cancel">{{dialog_cancel}}</div>
+      <div class="hp-confirm-ft-item" data-btn="confirm">{{dialog_confirm}}</div>
+    </div>
+  </div>
+</div>

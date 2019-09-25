@@ -1,0 +1,85 @@
+@import '../../template/header.scss';
+@import '../../template/dialog.scss';
+body{
+  margin:0;
+}
+
+.hp-devices-list{
+  background-color:#F9FAFC;
+  -webkit-touch-callout:none; 
+  width:100%;
+  padding:0;
+  font-family: "PingFangSC-Light", "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "SimHei", "Arial", "sans-serif";
+  .hp-devices-tips{
+    width:100%;
+    color:#95A1AF;
+    padding: 23px 16px 8px;
+    box-sizing: border-box;
+    font-size:14px;
+    line-height:20px;
+  }
+  .hp-lists{
+    padding:0;
+    li{
+      list-style:none;
+      margin: 16px 0;
+      background-color:#fff;
+      padding:10px 6px 10px 16px;
+      .hp-this-device{
+        float:right;
+        margin:8px 10px 0 0;
+        padding:0 8px;
+        color:#BBC2CA;
+        font-size:12px;
+        border-color:none;
+        border-radius:9px;
+        background-color:#ECEDF2
+      }
+    }
+    p{
+      margin:5px 68px;
+    }
+    .hp-item-name{
+      font-size:16px;
+      color:#464D5C;
+    }
+    .hp-item-time{
+      font-size:14px;
+      color:#95A1AF;
+      font-weight: lighter;
+    }
+    .hp-item-location{
+      font-size:14px;
+      color:#95A1AF;
+      font-weight: lighter;
+    }
+    button{
+      padding:5px 20px 10px;
+      float:right;
+      color:#6D8BFF;
+      font-size:14px;
+      font-weight: normal;
+      border:none;
+      background-color:transparent;
+      outline:none;
+      &:active {
+        color:rgb(54, 92, 243);
+      }
+    }
+    .hp-icon{
+      width:56px;
+      height:56px;
+      float:left;
+      background-size:56px 56px;
+    }
+    .hp-icon-mobile{
+      background-image:url('../../../res/mobile.png');
+    }
+    .hp-icon-pad{
+      background-image:url('../../../res/pad.png');
+    }
+    .hp-icon-pc{
+      background-image:url('../../../res/pc.png');
+    }
+  }
+}
